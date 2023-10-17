@@ -29,3 +29,5 @@ while True:
         print('green on')
 
     time.sleep(60)  # Check every minute
+
+# Does GIT work?
