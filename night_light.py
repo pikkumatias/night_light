@@ -28,6 +28,4 @@ while True:
         red.off()
         print('green on')
 
-    time.sleep(60)  # Check every minute
-
-# Does GIT work?
+    time.sleep(60)  # Delay the loop for 60 secodns
