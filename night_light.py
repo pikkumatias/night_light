@@ -39,6 +39,3 @@ while True:
         print('Green is on')
 
     time.sleep(60)  # Check every minute
-
-
-This setup provides a clear representation of each color interval and makes it easy to adjust the times as needed. The script checks the current time every minute and switches the LEDs based on the defined intervals.
