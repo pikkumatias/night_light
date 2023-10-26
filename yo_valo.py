@@ -6,7 +6,7 @@ import time
 # Initialize LEDs
 green = LED(17)
 yellow = LED(27)
-red = LED(16)
+red = LED(22)
 
 # Define the time intervals for each LED color
 GREEN_START_TIME = datetime.strptime("06:09", "%H:%M").time()
