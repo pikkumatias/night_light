@@ -21,8 +21,8 @@ YELLOW_END_TIME = GREEN_START_TIME  # Using the start of the green period as the
 while True:
     current_time = datetime.now().time()
 
-    # Check the times based on the defined intervals
-    if RED_START_TIME <= current_time or current_time <= RED_END_TIME:  # This condition handles the time wrapping midnight for red
+    if (RED_START_TIME <= current_time <= datetime.strptime("23:59", "%H:%M").time()) or \
+       (datetime.strptime("00:00", "%H:%M").time() <= current_time <= RED_END_TIME):
         green.off()
         yellow.off()
         red.on()
@@ -39,3 +39,4 @@ while True:
         print('Green is on')
 
     time.sleep(60)  # Check every minute
+
